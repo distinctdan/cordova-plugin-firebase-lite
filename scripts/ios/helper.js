@@ -180,7 +180,7 @@ module.exports = {
                 "    end\n" +
                 "end";
             fs.writeFileSync(podFilePath, podFile);
-            console.log('cordova-plugin-firebasex: Applied IOS_STRIP_DEBUG to Podfile');
+            console.log('cordova-plugin-firebase-lite: Applied IOS_STRIP_DEBUG to Podfile');
         }
     },
     applyPluginVarsToPlists: function(googlePlistPath, appPlistPath, pluginVariables){
