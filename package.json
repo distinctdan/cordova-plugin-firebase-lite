@@ -1,0 +1,39 @@
+{
+  "name": "cordova-plugin-firebase-lite",
+  "version": "1.0.0",
+  "description": "Cordova plugin for Google Firebase - only includes crashlytics and performance",
+  "author": {
+    "name": "Daniel Stone"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dpa99c/cordova-plugin-firebase"
+  },
+  "cordova": {
+    "id": "cordova-plugin-firebase",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "firebase",
+    "crashlytics",
+    "analytics",
+    "performance"
+  ],
+  "scripts": {
+    "version": "node ./bump-version.js && git add -A plugin.xml",
+    "postversion": "git push && git push --tags && npm publish --verbose"
+  },
+  "dependencies": {
+    "xcode": "^2.0.0",
+    "xml2js": "^0.4.16",
+    "q": "^1.5.1",
+    "plist": "^3.0.1"
+  }
+}
